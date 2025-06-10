@@ -1,12 +1,21 @@
-# React + Vite
+# React Exercise 2 - Store App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Jan Carlo L. Cabrera UPLB
 
-Currently, two official plugins are available:
+## Code Description
+----------
+This is a React-based product listing application that fetches product data from an external API and displays it in a responsive, Material-UI styled grid. It includes features such as search, category filtering, loading indicators, error handling, and a product detail modal.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to Use?
+----------
+1. Wait for products to **load** on app start.
+2. Use the **search** bar to **filter** products by *title* or *category*.
+3. Use the category **dropdown** to filter by specific product categories.
+4. **Click** a product to view more details in a modal.
+5. Use the "Clear Filters" button to **reset** search and filters.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Key Learnings and Takeaways
+----------
+- Learned how to efficiently manage API data and render it with performance in mind using `useMemo()` to avoid unnecessary re-renders.
+- Understood the importance of UI state synchronization (e.g., search input, category filters, modal visibility) and how controlled components help maintain consistency.
+- A significant challenge was ensuring that filtering by both search and category didn’t cause performance issues or desynchronized UI. I overcame this by memoizing the filtered product list with `useMemo()` and ensuring filters were controlled. The result was a responsive and smooth user experience even with dynamic filter changes.
