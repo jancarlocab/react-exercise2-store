@@ -21,6 +21,17 @@ import SearchIcon from '@mui/icons-material/Search';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import ClearIcon from '@mui/icons-material/Clear';
 
+// PARAMS
+// searchTerm: Current search term entered by the user
+// selectedCategory: Currently selected product category
+// categories: Array of available product categories
+// onSearchChange: Callback function to handle search term changes
+// onCategoryChange: Callback function to handle category selection changes
+// onClearFilters: Callback function to clear all filters
+// resultsCount: Number of products currently displayed after filtering
+// totalCount: Total number of products available in the dataset
+
+// Returns a search and filter component with input fields, category selection, and results count
 const SearchAndFilter = ({
   searchTerm,
   selectedCategory,

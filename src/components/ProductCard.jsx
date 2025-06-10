@@ -10,6 +10,10 @@ import {
   Rating
 } from '@mui/material';
 
+
+// PARAMS
+// product: Object containing product details
+// onClick: Function to call when the card is clicked
 const ProductCard = ({ product, onClick }) => {
   return (
     <Card

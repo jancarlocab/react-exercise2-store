@@ -4,6 +4,11 @@
 import { Box, Typography, Button } from '@mui/material';
 import SearchOffIcon from '@mui/icons-material/SearchOff';
 
+// PARAMS
+// onClearFilters: Function to call when the "Clear All Filters" button is clicked
+// hasFilters: Boolean indicating if there are active filters applied
+
+// Returns a styled component that displays a message when no products are found
 const NoResults = ({ onClearFilters, hasFilters }) => (
   <Box sx={{
     display: 'flex',

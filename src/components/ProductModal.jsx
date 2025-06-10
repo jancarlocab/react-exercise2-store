@@ -1,3 +1,6 @@
+// ProductModal.jsx
+// This component displays detailed information about a product in a modal dialog.
+
 import {
     Dialog,
     DialogTitle,
@@ -14,6 +17,12 @@ import {
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
+// PARAMS
+// open: Boolean to control modal visibility
+// product: Object containing product details to display
+// onClose: Function to call when the modal is closed
+
+// Returns a modal dialog displaying product detail
 const ProductModal = ({ open, product, onClose }) => {
     if (!product) return null;
 

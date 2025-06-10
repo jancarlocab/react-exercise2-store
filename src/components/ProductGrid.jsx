@@ -1,7 +1,16 @@
+// ProductGrid.jsx
+// This component displays a grid of product cards.
+
+
 import { Grid } from '@mui/material';
 import ProductCard from './ProductCard';
 import NoResults from './NoResults';
 
+// PARAMS
+// products: Array of product objects to display
+// onProductClick: Function to call when a product card is clicked
+
+// Returns a grid of product cards, or a "No Results" message if no products are found
 const ProductGrid = ({ products, onProductClick }) => {
   if (products.length === 0) {
     return <NoResults hasFilters={true} />;
